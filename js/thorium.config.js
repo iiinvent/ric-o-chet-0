@@ -7,10 +7,10 @@
 const kDebugMessagesLevel= 1;
 const kHybridAppsLog = true;
 const kAutoUpdate=false;
-const kShowPreloader=false;
-const kLocalRoot = "http://localhost:8080/thabiso_today/";
+const kShowPreloader=true;
+const kLocalRoot = "http://localhost:8080/ricochet/";
 const kMediaRoot = './db/dbassets/';
-const kRemoteHost="https://thabiso.today/";
+const kRemoteHost="https://ricochet.microdash.top/";
 const kTimeOut =6000;
 const kCrossDomain =false;
 const kAuthMode =0;
@@ -18,32 +18,32 @@ const kWebShareApi =true;
 const kAutoClosePanels =true;
 const kDesktopAllowed =true;
 const kOneSignalAppId="";
-const kTheme='.color-theme-black';
-const kCustomColor=null;
+const kTheme=null;
+const kCustomColor='';
 const kFillMode=false;
 
-const kPhotoBrowserBackLinkText="close";
+const kPhotoBrowserBackLinkText="Close";
 const kPhotoBrowserTheme="dark";
-const kPhotoBrowserEffect="fade";
+const kPhotoBrowserEffect="slide";
 const kPhotoBrowserAutoPlay="";
 
 const kForceInstall = false;
-const kAddToHomeScreenIos = true;
-const kAddToHomeScreenMd = true;
-const kSkipButton=true;
-const kSkipButtonText="Skip";
-const kAddToHomeScreenTitle="TK";
-const kAddToHomeScreenMdText="Save to desktop now";
-const kAddToHomeScreenIosText="Save to home screen now";
+const kAddToHomeScreenIos = false;
+const kAddToHomeScreenMd = false;
+const kSkipButton=false;
+const kSkipButtonText="";
+const kAddToHomeScreenTitle="";
+const kAddToHomeScreenMdText="";
+const kAddToHomeScreenIosText="";
 const kImgMaxSize=10;
 const kDocMaxSize=10;
 const kMultilingual=false;
-const kDbHTMLRendering= false;
+const kDbHTMLRendering= true;
 
 /*-- Dates --*/
 const kDateFormat="mm.dd.yyyy"; //"mm.dd.yyyy";
 const kDateTimeFormat="mm.dd.yyyy hh::mm a"; //"mm.dd.yyyy hh::mm a";
-const kHours12=false;
+const kHours12=true;
 var kdayNames=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 var kdayNamesShort=['sun','mon','tue','wed','thu','fri','sat'];
 var kmonthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -87,12 +87,12 @@ const kTextEditorButtons=[
     ['indent', 'outdent'],
   ];
 
-const kMode="no-cors"; //cors, no-cors, same-origin
-const kCache="default"; //default, no-cache, reload, force-cache, only-if-cached
-const kCredentials="omit"; //include, same-origin, omit
-const kContenttype="application/json"; //application/json, application/x-www-form-urlencoded ...
-const kRedirect="follow"; //manual, follow, error
-const kReferrerpolicy="no-referrer"; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+const kMode=""; //cors, no-cors, same-origin
+const kCache=""; //default, no-cache, reload, force-cache, only-if-cached
+const kCredentials=""; //include, same-origin, omit
+const kContenttype=""; //application/json, application/x-www-form-urlencoded ...
+const kRedirect=""; //manual, follow, error
+const kReferrerpolicy=""; //no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
 const kAuthorization=""; //'Authorization': 'Basic xxxxx'
 
 
@@ -119,14 +119,14 @@ if (document.location.search.indexOf('theme=') >= 0) {
     theme = document.location.search.split('theme=')[1].split('&')[0];
 }
 var app = new Framework7({
-    "version": "1.0.4",
-    "id": "today.thabiso",
+    "version": "1.0.0",
+    "id": "com.thorium.ricochet",
     "root": "#app",
     "theme": theme,
     "autoDarkTheme": false,
     "language": "en",
     "routes": routes,
-    "name": "TK",
+    "name": "ricochet",
     "initOnDeviceReady": true,
     "init": true,
     "iosTranslucentBars": true,

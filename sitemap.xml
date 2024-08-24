@@ -5,13 +5,13 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
- <loc>https://thabiso.today</loc>
- <lastmod>2022-12-20</lastmod>
+ <loc>https://ricochet.microdash.top</loc>
+ <lastmod>2024-08-24</lastmod>
  <priority>1.00</priority>
 </url>
 <url>
- <loc>https://thabiso.today/index.html</loc>
- <lastmod>2022-12-20</lastmod>
+ <loc>https://ricochet.microdash.top/index.html</loc>
+ <lastmod>2024-08-24</lastmod>
  <priority>0.80</priority>
 </url>
 </urlset>

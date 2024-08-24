@@ -1,7 +1,7 @@
 /* -- custom css for file index.html -- */
 
-/* -- embedweb embed-responsive w-100 embed-responsive-cover -- */
+/* -- embedweb embed-responsive w-100 embed-responsive-cover bg-color-black -- */
 #div-1005 {
-	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
 }
 
